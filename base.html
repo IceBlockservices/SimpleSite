@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Coolroom Trailer Rentals</title>
+  </head>
+  <body>
+    <h1>Welcome to Coolroom Trailer Rentals</h1>
+    <div>
+      <!-- Create tabs using an unordered list and styled with CSS -->
+      <ul class="tabs">
+        <li class="tab active">Browse Trailers</li>
+        <li class="tab">FAQ</li>
+        <li class="tab">Contact</li>
+      </ul>
+    </div>
+    <!-- Add a div to hold the content for each tab -->
+    <div class="tab-content">
+      <!-- Content for the "Browse Trailers" tab -->
+      <div class="tab-pane active">
+        <p>We have a variety of coolroom trailers available for rent. Browse our selection below:</p>
+        <ul>
+          <li>Small Coolroom Trailer: $100/day</li>
+          <li>Medium Coolroom Trailer: $150/day</li>
+          <li>Large Coolroom Trailer: $200/day</li>
+        </ul>
+        <p>To rent a coolroom trailer, please fill out the form below:</p>
+        <form action="/confirm-rental" method="POST">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="trailer-size">Select a trailer size:</label><br>
+          <select id="trailer-size" name="trailer-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select><br><br>
+          <label for="rental-period">Rental Period:</label><br>
+          <input type="number" id="rental-period" name="rental-period" min="1" max="30"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <!-- Content for the "FAQ" tab -->
+      <div class="tab-pane">
+        <h2>Frequently Asked Questions</h2>
+        <h3>How do I rent a coolroom trailer?</h3>
+        <p>To rent a coolroom trailer, simply fill out the form on the "Browse Trailers" tab and submit your request. We will review your request and confirm the availability and price of your rental.</p>
+        <h3>What is the cancellation policy?</h3>
+        <p>You may cancel your rental up to 24 hours before the start of your rental period. Cancellations within 24 hours of the start of your rental period will not be refunded.</p>
+        <h3>Do you offer delivery and pickup?</h3>
+        <p>Yes, we offer delivery and pickup services for an additional fee. Please contact us for more information.</p>
+      </div>
+    </div>
+  </body>
+</html>
